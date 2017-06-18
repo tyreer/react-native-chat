@@ -3,7 +3,7 @@ import React from 'react';
 import { StyleSheet, Text, View, FlatList, TextInput, KeyboardAvoidingView, TouchableOpacity } from 'react-native';
 import {send, subscribe} from 'react-native-training-chat-server';
 import ReversedFlatList from 'react-native-reversed-flat-list';
-import Header from './Header';
+import Header from './components/Header';
 
 const NAME = 'Robert Tyree';
 const CHANNEL = 'Reactivate';
@@ -80,7 +80,7 @@ const styles = StyleSheet.create({
     borderBottomColor: '#eee',
   },
   message: {
-    fontSize: 18,
+    fontSize: 24,
   },
   sender: {
     fontWeight: 'bold',
@@ -93,13 +93,13 @@ const styles = StyleSheet.create({
   input: {
     paddingHorizontal: 20,
     paddingVertical: 10,
-    fontSize: 18,
+    fontSize: 20,
     flex: 1,
   },
   send: {
     alignSelf: 'center',
     color: 'lightseagreen',
-    fontSize: 16,
+    fontSize: 20,
     fontWeight: 'bold',
     padding: 20,
   },
